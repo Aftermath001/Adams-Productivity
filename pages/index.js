@@ -1,0 +1,2 @@
+export const access = "user";
+export default async function(req,res){res.setHeader("Content-Type","text/html; charset=utf-8");res.send('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#10141d"><title>Adams Productivity Hub</title><link rel="stylesheet" href="/theme.css"><link rel="stylesheet" href="/app.css"></head><body><div id="app"><div class="loading">Loading your productivity hub…</div></div><script src="/app.js" defer></script></body></html>')}
