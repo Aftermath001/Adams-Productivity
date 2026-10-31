@@ -1,0 +1,39 @@
+[auth]
+enabled = true
+providers = ["email"]
+
+[db.tables.activities]
+read = "own"
+write = "own"
+
+[db.tables.activity_completions]
+read = "own"
+write = "own"
+
+[db.tables.projects]
+read = "own"
+write = "own"
+
+[db.tables.tasks]
+read = "own"
+write = "own"
+
+[db.tables.learning_sessions]
+read = "own"
+write = "own"
+
+[db.tables.reading_sessions]
+read = "own"
+write = "own"
+
+[db.tables.weekly_reviews]
+read = "own"
+write = "own"
+
+[db.tables.weekly_goals]
+read = "own"
+write = "own"
+
+[db.tables.user_preferences]
+read = "own"
+write = "own"
