@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS activity_completions (id UUID PRIMARY KEY DEFAULT gen_random_uuid(), user_id TEXT NOT NULL, activity_id UUID NOT NULL REFERENCES activities(id) ON DELETE CASCADE, completion_date DATE NOT NULL, completed BOOLEAN NOT NULL DEFAULT TRUE, notes TEXT DEFAULT '', created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(), UNIQUE(user_id, activity_id, completion_date))
