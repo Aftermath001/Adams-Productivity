@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS learning_sessions (id UUID PRIMARY KEY DEFAULT gen_random_uuid(), user_id TEXT NOT NULL, track TEXT NOT NULL, topic TEXT NOT NULL, duration_minutes INTEGER NOT NULL DEFAULT 0, notes TEXT DEFAULT '', resource_url TEXT DEFAULT '', session_date DATE NOT NULL DEFAULT CURRENT_DATE, created_at TIMESTAMPTZ NOT NULL DEFAULT NOW())
